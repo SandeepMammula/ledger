@@ -167,7 +167,7 @@ const h=s=>{let x=5381;for(const c of s)x=(x*33^c.charCodeAt(0))>>>0;return x.to
 let M={},cur="ml",filt="all",q="",ref=null,tm=null;
 try{M=JSON.parse(localStorage.getItem("ledger")||"{}")}catch(e){}
 /* ===== FIREBASE CONFIG: paste yours here (Firebase console > Project settings > Your apps > Web app) ===== */
-const FB={apiKey:"PASTE_API_KEY",authDomain:"PASTE_PROJECT_ID.firebaseapp.com",projectId:"PASTE_PROJECT_ID",appId:"PASTE_APP_ID"};
+const FB={apiKey:"AIzaSyAWIsPpYg1I1M4q-IN_0Gu2eHzdbic9p_E",authDomain:"ledger-dd83d.firebaseapp.com",projectId:"ledger-dd83d",appId:"1:856355636786:web:e150c03076204796089e2b"};
 const cfgOk=typeof firebase!=="undefined"&&!/^PASTE/.test(FB.apiKey);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const lk=s=>esc(s).replace(/(https?:\/\/[^\s<]+?)([.,;:!?)]*)(?=\s|$)/g,(m,u,p)=>'<a class="q" href="'+u+'" target="_blank" rel="noopener noreferrer">'+u+'</a>'+p);
